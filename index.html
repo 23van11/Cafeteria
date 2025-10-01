@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú | Café Estelar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">☕ Café Estelar</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Explora Nuestro Menú</h2>
+      <p>Sabores únicos. Momentos inolvidables. Solo en Café Estelar. Descubre una experiencia sensorial donde cada taza cuenta una historia, elaborada con los mejores granos seleccionados y el cariño de baristas apasionados. Ven y disfruta del café como nunca antes lo has probado.</p>
+      <p>Más que una bebida, nuestro café es una invitación a detener el tiempo, compartir sonrisas y crear recuerdos en cada sorbo. Vive la magia del café artesanal en un espacio pensado para ti.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2 class="section-title">Menú de Cafetería</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Café Americano -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/cafe-americano.png" alt="Café Americano">
+            <div class="menu-info">
+              <h3>Café Americano</h3>
+              <p class="description">Taza de café suave</p>
+              <p class="price">$25.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capuchino -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/cafe-capuchino.png" alt="Capuchino">
+            <div class="menu-info">
+              <h3>Capuchino</h3>
+              <p class="description">Espuma cremosa y sabor intenso</p>
+              <p class="price">$35.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Café Mocha -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/cafe-mocha.png" alt="Café Mocha">
+            <div class="menu-info">
+              <h3>Café Mocha</h3>
+              <p class="description">Café con chocolate y crema batida</p>
+              <p class="price">$40.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Café Frappé -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/cafe-frappe.png" alt="Café Frappé">
+            <div class="menu-info">
+              <h3>Café Frappé</h3>
+              <p class="description">Café helado con crema</p>
+              <p class="price">$60.50</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Café Vienés -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/cafe-vianes.png" alt="Café Vienés">
+            <div class="menu-info">
+              <h3>Café Vienés</h3>
+              <p class="description">Café con nata y chocolate</p>
+              <p class="price">$64.75</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Café con Canela -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/cafe-canela.png" alt="Café con Canela">
+            <div class="menu-info">
+              <h3>Café con Canela</h3>
+              <p class="description">Café con canela molida</p>
+              <p class="price">$33.25</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latte Macchiato -->
+        <div class="swiper-slide">
+          <div class="menu-card">
+            <img src="../images/latte-macchiato.png" alt="Latte Macchiato">
+            <div class="menu-info">
+              <h3>Latte Macchiato</h3>
+              <p class="description">Café con leche vaporizada servido en capas, muy vistoso en vasos de vidrio.</p>
+              <p class="price">$53.25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Flechas -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Paginación -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact-section">
+    <h2 class="section-title">Contáctanos</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Visítanos</h3>
+        <p>📍 Av. del Café 123, Ciudad del Sabor</p>
+        <p>📞 +52 123 456 7890</p>
+        <p>✉️ contacto@cafeestelar.com</p>
+        <iframe src="https://www.google.com/maps?q=CDMX&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Estelar. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,       
+      spaceBetween: 20,       
+      loop: true,             
+      autoplay: {
+        delay: 3000,          
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+</body>
+</html>
